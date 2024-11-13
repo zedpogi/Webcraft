@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+  font-size: 15pt;
+  background-color: #d2e8fa;
+}
+
+header h1.logo-text {
+  font-family: 'Pixelify Sans';
+  font-size: 25px;
+  position: absolute;
+  top: 38px;
+  left: 140px;
+  
+}
+
+header  a {
+  float: right;
+  margin-right: 80px;
+  text-decoration: none;
+  padding-top: 38px;
+  color: black;
+  position: relative;
+  font-family: 'Pixelify Sans';
+  font-size: 25px;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #0d7ec0;
+}
+
+
+.slogan{
+  font-family: 'Pixelify Sans';
+  font-size: 50px;
+  margin-left: 20px;
+  padding: 50px;
+}
+
+h3 {
+  font-family: 'Pixelify Sans';
+  font-size: 30px;
+  margin-left: 25px;
+  padding: 45px;
+  width: 40%;
+}
+
+header .logo {
+  width: auto;
+  height: 100px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+
+button {
+  font-family: 'Pixelify Sans';
+  font-size: 20px;
+  background-color: rgb(99, 230, 253); 
+  color: black; 
+  border-radius: 80px;
+  height: 50px;
+  width: 200px;
+  margin-left: 1000px;
+  position: relative;
+  bottom: 150px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+  background-color: #0d7ec0;
+  color: rgb(255, 255, 255);
+}
+
+
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 30px;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.signup {
+  margin: 185px 0px 0px 285px;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #e2fffb;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  height: 80%;
+  border-radius: 50px;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 430px;
+  top: 160px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family:  Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
+  background-color: black;
+  padding: 4px 8px 4px 8px;
+  border-radius: 10px;
+}
+
+.close:hover,
+.close:focus {
+  background-color:red ;
+  cursor: pointer;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+#About-Us {
+  height: 200px;
+  margin: 1000px 0px 400px 0px;
+
+}
+
+#About-Us h5 {
+  margin-left: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.about-title {
+  font-family: 'Pixelify Sans';
+  font-size: 65px;
+  position: relative;
+  bottom: 300px;
+  text-align: center;
+}
+
+.about-desc {
+  font-family: 'Pixelify Sans';
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  bottom: 300px;
+}
+
+p {
+  font-family: 'Pixelify Sans';
+}
+
+.container h1 {
+  font-family: 'Pixelify Sans';
+}
+
+label {
+  font-family: 'Pixelify Sans';
+}
