@@ -5,6 +5,7 @@ body {
   font-family: 'Pixelify Sans';
   font-size: 15pt;
   background-color: #dceefc;
+  overflow-x: hidden; 
 }
 
 header h1.logo-text {
@@ -188,8 +189,7 @@ header .logo {
 
 .title-tags {
     text-align: center;
-    position: relative;
-    bottom: 350px;
+    
     font-size: 50px;
 }
 
@@ -197,10 +197,82 @@ header .logo {
     width: auto;
     height: 750px;
     border-radius: 10px;
-    position: relative;
-    display: flex;
-    margin: 0 auto;
-    bottom: 300px;  
-    border: 5px solid transparent;
+    display: block;
+    margin: 0 auto; 
 }
 
+.links-img h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.links-img p {
+    width: 35%;
+    text-align: left;
+    float: left;
+    margin-left: 100px;
+}
+.link-example {
+    position: relative;
+    left: 200px;
+    text-align: left;
+}
+
+/* .link-button {
+    padding: 20px 40px;
+    background-color: #af4c4c;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    position: relative; 
+    left: 700px;
+    top: 1000px;
+    border: 3px solid rgb(5, 5, 5);
+
+} 
+    
+.link-button:hover {
+    background-color: #f2ff81;
+    color: black;
+} */
+
+.nav-buttons {  
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 100px;
+    bottom: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+}
+
+.nav-buttons button {
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #010a8b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-buttons button:hover {
+    background-color: #45a049;
+}
+
+.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
