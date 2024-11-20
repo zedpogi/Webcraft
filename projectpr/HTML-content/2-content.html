@@ -17,17 +17,79 @@
         <img src="html-basictag.jpg" class="html-tags">
     </div>
 
-    <div class="links-img">
-        <h1>Links and Images</h1>
-        <p>A link is like a doorway to open a new page! In HTML, we use the &lt;a&gt; tag to create links. When you click on a link, it takes you to another page, just like clicking on a button that opens something new.</p>
+    <div class="html-attrb">
+        <h1>HTML Attributes</h1>
+        <p>Let's say you want to show how to use a toy you're gifting someone. Instructions such as "Push the red button to make the toy move!" are similar to HTML attributes, which are additional characteristics about the items on a webpage.</p>
     </div>
 
-    <h2 class="link-example">Example: </h2>
+    <div class="textbox-container">
+        <!-- Left panel: Textbox and button -->
+        <div class="left-panel">
+            <h2>HTML Attributes Example</h2>
+            
+            <!-- Text Area with HTML code inside -->
+            <textarea id="htmlCode">&lt;img src="cat.jpg" alt="A cute cat playing with a ball"&gt;</textarea>
+
+            <br>
+            <!-- Button to display the HTML -->
+            <button onclick="displayImage()">Show Image</button>
+
+        </div>
+
+        <!-- Right panel: Image display area -->
+        <div class="right-panel">
+            <div id="imageDisplay"></div>
+        </div>
+    </div>
+
+    <script>
+        function displayImage() {
+            // Get the HTML code from the text area
+            var code = document.getElementById("htmlCode").value;
+
+            // Display the HTML code in the div (render the image)
+            document.getElementById("imageDisplay").innerHTML = code;
+        }
+    </script>
+        
+    <p class="attributes-def">In HTML, attributes provide the element more details and help control its behavior or appearance. Attributes are always specified in the opening tag of an element and come in name-value pairs.</p>
+
+    <div class="semantic">
+        <h1 class="semantic-title">Semantic HTML</h1>
+        <p>A semantic element clearly describes its meaning to both the browser and the developer. Semantic HTML is like organizing your content into labeled boxes, so both people and computers can understand what each part is for.
+        </p>
+    </div>
+
+    <div class="textbox2-container">
+        <h2>Semantic HTML Example</h2>
+
+        <!-- Text Area with HTML code inside -->
+        <textarea id="htmlCode">
+&lt;header&gt;
+  &lt;h1&gt;One Piece&lt;/h1&gt;
+  &lt;p&gt;By Eiichiro Oda&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;article&gt;
+  &lt;h2&gt;Monkey D. Luffy&lt;/h2&gt;
+  &lt;p&gt;The man who will become the Pirate King&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;Thanks for reading!&lt;/p&gt;
+&lt;/footer&gt;
+        </textarea>
+
+    </div>
+    
+    <div class="mga-semantic">
+        <p><span style="font-weight: bold;">&lt;header&gt;</span> - This element represents introductory content or a group of navigational links. </p>
+        <p><span style="font-weight: bold;">&lt;article&gt;</span> - This element is used to represent a self-contained piece of content that can stand alone, such as a blog post, news article, product description, or user comment. </p>
+        <p><span style="font-weight: bold;">&lt;footer&gt;</span> - This element represents the footer of a section or the entire document.  Footers generally appear at the bottom of a page or section.</p>
+    </div>
 
 
-
-
-    <!--<a href="quiz.html" class="link-button">Start Quiz!</a> --> 
+    <a href="quiz.html" class="link-button">Start Quiz!</a> 
 
 
     

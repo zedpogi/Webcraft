@@ -36,6 +36,7 @@ header .logo {
     position: relative;
     top: 50px;
     left: 80px;
+    color: black;
 }
 
 .coderboy {
@@ -72,7 +73,7 @@ header .logo {
 }
 
 .different-types {
-    
+    color: black;
     font-size: 25px;
     margin-left: 50px;
     text-align: left;
@@ -91,6 +92,7 @@ header .logo {
 }
 
 .basic-structure {
+    color: black;
     font-size: 25px;
     margin-right: 285px;
     text-align: right;
@@ -116,6 +118,7 @@ header .logo {
 .html-desc {
     margin-left: 50px;
     width: 41%;
+    font-weight: 650;
 }
 
 .html-bisek {
@@ -125,6 +128,7 @@ header .logo {
     bottom: 120px;
     text-align: right;
     width: 40%;
+    font-weight: 650;
 }
 
 #editor {
@@ -168,7 +172,7 @@ header .logo {
     
 } 
 
-#input {
+#html-input {
     display: block;
     margin: 0 auto;
     font-size: 16px;
@@ -176,16 +180,29 @@ header .logo {
     border-radius: 5px;
     color:rgb(245, 254, 255);
     resize: none;
+    height: 300px;
+    width: 450px;
+    position: relative;
+    bottom: 10px;
 }
 
 #execute {
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Montserrat';
     font-weight: 550;
     display: block;
     margin: 0 auto;
+    width: 40%;
+    position: relative;
+    bottom: 20px;
+    background-color: #690064;
+    
 }
+
+#execute:hover {
+    background-color: green;
+  }
 
 .title-tags {
     text-align: center;
@@ -201,27 +218,23 @@ header .logo {
     margin: 0 auto; 
 }
 
-.links-img h1 {
+.html-attrb h1 {
     text-align: center;
     padding: 50px;
 }
 
-.links-img p {
-    width: 35%;
-    text-align: left;
-    float: left;
-    margin-left: 100px;
-}
-.link-example {
-    position: relative;
-    left: 200px;
-    text-align: left;
+.html-attrb p {
+    font-size: 25px;
+    text-align: center;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
 }
 
-/* .link-button {
+.link-button {
     padding: 20px 40px;
-    background-color: #af4c4c;
-    color: rgb(255, 255, 255);
+    background-color: #6cfd90;
+    color: rgb(15, 15, 15);
     border: none;
     border-radius: 5px;
     font-size: 25px;
@@ -229,16 +242,16 @@ header .logo {
     display: inline-block;
     cursor: pointer;
     position: relative; 
-    left: 700px;
-    top: 1000px;
+    left: 725px;
+    top: 550px;
     border: 3px solid rgb(5, 5, 5);
 
 } 
     
 .link-button:hover {
-    background-color: #f2ff81;
-    color: black;
-} */
+    background-color: #fd3b3b;
+    color: rgb(240, 240, 240);
+} 
 
 .nav-buttons {  
     display: block;
@@ -275,4 +288,162 @@ header .logo {
 .disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+
+.textbox-container {
+    background-color: rgb(171, 165, 255);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 900px;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+}
+
+.left-panel {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.right-panel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #000000;
+    
+    padding-left: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #003169;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0a0064;
+}
+
+#imageDisplay img {
+    max-width: 100%;
+    border-radius: 4px;
+    display: block;
+}
+
+.note {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+}
+
+.attributes-def {
+    font-size: 25px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+}
+
+.semantic-title {
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
+
+.semantic p {
+    text-align: center;
+    position: relative;
+    top: 325px;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.textbox2-container {
+    background-color: rgb(171, 165, 255);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: 400px;
+}
+
+.textbox2-container h2 {
+    color: #333;
+    text-align: center;
+}
+
+.textbox2-container textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.textbox2-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+.textbox2-container button:hover {
+    background-color: #45a049;
+}
+
+.mga-semantic {
+    font-size: 25px;
+    width: 70%;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    top: 450px;
+    font-weight: normal;
 }

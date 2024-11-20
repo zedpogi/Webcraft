@@ -5,9 +5,12 @@ const executeButton = document.getElementById("execute");
 const preset = `<!DOCTYPE html>
 <html>
   <head>
+    <style>
+      body {background-color: cyan;}
+    </style>
   </head>
   <body>
-    <h1> Test it out yourself! </h1>
+    <h1> This is called internal CSS </h1>
   </body>
 </html>
 `;
