@@ -11,6 +11,7 @@ const preset = `<!DOCTYPE html>
   </head>
   <body>
     <h1> This is called internal CSS </h1>
+    <h2> which means you can add CSS inside the HTML File </h2> 
   </body>
 </html>
 `;

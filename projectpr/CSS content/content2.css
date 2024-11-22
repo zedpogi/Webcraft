@@ -152,3 +152,23 @@ header .logo {
 #execute:hover {
   background-color: green;
 }
+
+#ex-css {
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 3px solid rgb(255, 239, 169);
+  background-color: black;
+  position: relative;
+  bottom: 200px;
+  margin-left: 50px;
+}
+
+.external-desc {
+  font-size: 30px;
+  position: relative;
+  bottom: 500px;
+  width: 40%;
+  left: 700px;
+  text-align: center;
+}
