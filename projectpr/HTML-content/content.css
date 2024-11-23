@@ -243,7 +243,7 @@ header .logo {
     cursor: pointer;
     position: relative; 
     left: 725px;
-    top: 550px;
+    top: 500px;
     border: 3px solid rgb(5, 5, 5);
 
 } 
@@ -253,42 +253,6 @@ header .logo {
     color: rgb(240, 240, 240);
 } 
 
-.nav-buttons {  
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    left: 100px;
-    bottom: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-}
-
-.nav-buttons a {
-    text-decoration: none;
-}
-
-.nav-buttons button {
-    padding: 10px 20px;
-    font-size: 24px;
-    background-color: #010a8b;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.nav-buttons button:hover {
-    background-color: #45a049;
-}
-
-.disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
 
 .textbox-container {
     background-color: rgb(171, 165, 255);
@@ -419,26 +383,9 @@ button:hover {
     box-sizing: border-box;
 }
 
-.textbox2-container button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-    width: 30%;
-    display: block;
-    margin: 0 auto;
-}
-
-.textbox2-container button:hover {
-    background-color: #45a049;
-}
-
 .mga-semantic {
+    font-family: 'Montserrat';
+    font-weight: 600;
     font-size: 25px;
     width: 70%;
     text-align: left;
@@ -447,3 +394,116 @@ button:hover {
     top: 450px;
     font-weight: normal;
 }
+
+.buttons {
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  
+  .blob-btn {
+    z-index: 1;
+    position: relative;
+    padding: 20px 46px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0505A9;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 10%;
+    bottom: 400px;
+  }
+  .blob-btn:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #0505A9;
+    border-radius: 30px;
+  }
+  .blob-btn:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+  }
+  .blob-btn:hover {
+    color: #FFFFFF;
+    border-radius: 30px;
+  }
+  .blob-btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+  }
+  .blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+  }
+  .blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url("#goo");
+  }
+  .blob-btn__blob {
+    position: absolute;
+    top: 2px;
+    width: 25%;
+    height: 100%;
+    background: #0505A9;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+  }
+  @supports (filter: url("#goo")) {
+    .blob-btn__blob {
+      transform: translate3d(0, 150%, 0) scale(1.4);
+    }
+  }
+  .blob-btn__blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+  }
+  .blob-btn__blob:nth-child(2) {
+    left: 30%;
+    transition-delay: 0.08s;
+  }
+  .blob-btn__blob:nth-child(3) {
+    left: 60%;
+    transition-delay: 0.16s;
+  }
+  .blob-btn__blob:nth-child(4) {
+    left: 90%;
+    transition-delay: 0.24s;
+  }
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
+  }
+  @supports (filter: url("#goo")) {
+    .blob-btn:hover .blob-btn__blob {
+      transform: translateZ(0) scale(1.4);
+    }
+  }

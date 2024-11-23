@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS content</title>
+    <title>CSS Lesson</title>
     <link rel="stylesheet" href="content2.css">
 </head>
 <body>
@@ -51,6 +51,44 @@
     
         <p class="external-desc">This is called external CSS which seperates the CSS file to the HTML file</p>
 
+        <div class="css-syntax">
+        <h1>This is the Basic syntax of CSS:</h1>
+        <textarea id="ex-syntax" rows="5" cols="10">
+        
+        selector {
+            property: value;
+        }
+        </textarea>
+        <p class="css1"><span style="font-weight: bold;">Selector </span>- These are the HTML elements or elements that you want to style.</p>
+        <p class="css2"><span style="font-weight: bold;">Property </span> - This is the attribute that you want to change (ex: color, font-size, background).</p>
+        <p class="css3"><span style="font-weight: bold;">Value </span> - The value you want to apply to the property (ex: red, 16px).
+        </p>
+        </div>
+    
+        <a href="2-css.html"> <div class="buttons">
+            <button class="blob-btn" s>
+              Next
+              <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                </span>
+              </span>
+            </button>
+          </a>
+            <br/>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+              </filter>
+            </defs>
+          </svg>
 
     <script src="executor.js"></script>
 </body>

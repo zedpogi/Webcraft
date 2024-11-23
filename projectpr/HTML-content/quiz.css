@@ -61,18 +61,25 @@ body {
   }
   
   button {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #9d84f8;
     color: white;
     border: none;
     border-radius: 4px;
+    position: relative;
+    top: 20px;
+    font-family: 'Montserrat';
     font-size: 16px;
     cursor: pointer;
+  
+  
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #008507;
   }
   
   #result {
