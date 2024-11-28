@@ -318,3 +318,152 @@ header .logo {
     transform: translateZ(0) scale(1.4);
   }
 }
+
+.selectors h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.selectors h2 {
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+}
+
+.selectors p {
+  font-family: 'Montserrat';
+  font-size: 22px;
+  text-align: left;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  line-height: 2;
+}
+
+.prop-values {
+  padding: 40px;
+}
+
+.prop-values h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.prop-values p {
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.prop-values h3 {
+  padding: 60px;
+  font-size: 30px;
+  position: relative;
+  left: 400px;
+}
+
+#prop-val {
+  position: relative;
+  bottom: 80px;
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 8px;
+  border: 5px solid rgb(76, 0, 255);
+  width: 30%;
+}
+
+.css-prop h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.font-text {
+  position: relative;
+  top: 25px;
+  margin-left: 170px;
+  font-family: 'Montserrat';
+}
+
+#font-text-ex {
+  margin-left: 55px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 8px;
+  border: 5px solid rgb(76, 0, 255);
+  width: 25%;
+  position: relative;
+  bottom: 20px;
+}
+
+.css-color {
+  position:relative;
+  bottom: 50px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+#color-ex {
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 8px;
+  border: 5px solid rgb(76, 0, 255);
+  width: 25%;
+  position: relative;
+  bottom: 275px;
+}
+
+.border {
+  position: relative;
+  float: right;
+  bottom: 145px;
+  margin-right: 210px;
+  font-family: 'Montserrat';
+}
+
+#border-ex {
+  float: right;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 8px;
+  border: 5px solid rgb(76, 0, 255);
+  width: 25%;
+  position: relative;
+  bottom: 520px;
+  margin-right: 55px;
+}
+
+.link-button {
+  padding: 20px 40px;
+  background-color: #6cfd90;
+  color: rgb(15, 15, 15);
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border: 3px solid rgb(5, 5, 5);
+  position: relative;
+  left: 700px;
+} 
+  
+.link-button:hover {
+  background-color: #fd3b3b;
+  color: rgb(240, 240, 240);
+} 
