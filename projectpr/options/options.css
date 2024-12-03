@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
 
+
+
 body {
   font-size: 15pt;
   background-color: #dceefc;
@@ -80,3 +82,86 @@ header .logo {
     transform: scale(0.7);
     transition: 1100ms;
 }
+
+.welcome-page{
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 20px;
+    box-shadow: 20px 15px rgba(0, 0, 0, 0.4);
+    width: 55%;
+    margin: 0px 0px 0px 400px;
+    padding: 5px 10px 15px 30px;
+}
+
+.welcome-page::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    margin: 100px 0px 0px 70px;
+    padding-bottom: 125px;
+    width: 44.5%;
+    height: 40%;
+}
+
+.welcome-page #imageTransition {
+    position: relative;
+    max-width: 900px;
+    margin-left: 70px;
+    opacity: 0.3;
+
+}
+
+.welcome-page #quote {
+    position: absolute;
+    color: white;
+    top: 400px;
+    margin-left: 150px;
+    font-size: 30px;
+}
+
+.welcome-page h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header #logout {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    font-size: 35px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 10px;
+    border: 3px darkgrey solid;
+    transition: 0.4s ease-in-out;
+
+}
+
+header #logout:hover {
+    cursor: pointer;
+    top: 25px;
+    background-color: red;
+    color: white;
+    border: 2px black solid;
+
+}
+
+.user-stats {
+    position: relative;
+    width: 80%;
+    background-color: white;
+    margin: 200px 0px 0px 150px;
+    padding-bottom: 150px;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+.user-stats #quizcount {
+    margin: auto;
+}
+
+.user-stats .user-data {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
