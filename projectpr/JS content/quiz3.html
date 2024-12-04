@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="quiz3.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo-text">Webcraft</h1>
+        <img src="webcraft_logo.png" alt="" class="logo">
+    </header>
+
+    <div class="quiz-body">
+    <div class="quiz-container">
+        <h1>Test your knowledge on Javascript!</h1>
+        <form id="quizForm">
+          <div class="question" id="q1">
+            <p>1. What is Javascript?</p>
+            <div class="options">
+              <label><input type="radio" name="q1" value="correctans1"> It is a programming language primarily used to make web pages interactive.</label>
+              <label><input type="radio" name="q1" value="London"> It is a database management system. </label>
+              <label><input type="radio" name="q1" value="wonkwonk"> It is a markup language used to structure web content.</label>
+              <label><input type="radio" name="q1" value="Madrid"> It is a programming language used for video editing.</label>
+            </div>
+            <button type="button" onclick="nextQuestion(1)">Next</button>
+          </div>
+    
+          <div class="question" id="q2">
+            <p>2. Which of the following is <span style="font-weight: bold;">NOT CORRECT </span>about Adding Javascript to webpages?</p>
+            <div class="options">
+              <label><input type="radio" name="q2" value="correctans2"> Adding Javascript to webpages only works if it's inside the body tag.</label>
+              <label><input type="radio" name="q2" value="Dickens"> It can be connected to HTML using External Javascript.</label>
+              <label><input type="radio" name="q2" value="Austen"> Javascript can be connected to HTML using Internal Javascript. </label>
+              <label><input type="radio" name="q2" value="Hemingway"> There are two main ways on adding Javascript to Webpages. </label>
+            </div>
+            <button type="button" onclick="nextQuestion(2)">Next</button>
+          </div>
+    
+          <div class="question" id="q3">
+            <p>3. What symbol is used to write Multi-line comments in Javascript?</p>
+            <div class="options">
+              <label><input type="radio" name="q3" value="Mercury"> / and /</label>
+              <label><input type="radio" name="q3" value="Mars"> * and *</label>
+              <label><input type="radio" name="q3" value="correctans3"> /* and */</label>
+              <label><input type="radio" name="q3" value="Earth"> // and //</label>
+            </div>
+            <button type="button" onclick="nextQuestion(3)">Next</button>
+          </div>
+    
+          <div class="question" id="q4">
+            <p>4. I.  Variables are containers for storing data.<br>
+                    II.  String is a Data type for text</p>
+            <div class="options">
+              <label><input type="radio" name="q4" value="Atlantic"> The following statements are False.</label>
+              <label><input type="radio" name="q4" value="correct4"> The following statements are True.</label>
+              <label><input type="radio" name="q4" value="Pacific"> The first statement is True while the second is False.</label>
+              <label><input type="radio" name="q4" value="correctans4">The second statement is True while the second is False. </label>
+            </div>
+            <button type="button" onclick="nextQuestion(4)">Next</button>
+          </div>
+    
+          <div class="question" id="q5">
+            <p>5. Which of the following is <span style="font-weight: bold;">NOT CORRECT </span> about Javascript?</p>
+            <div class="options">
+              <label><input type="radio" name="q5" value="Da Vinci"> It is one of the core technologies of web development alongside HTML and CSS. </label>
+              <label><input type="radio" name="q5" value="correctans5"> Javascript is the most difficult programming language.</label>
+              <label><input type="radio" name="q5" value="Picasso">  JavaScript enables dynamic content such as real-time updates, interactive forms, animations, and more.</label>
+              <label><input type="radio" name="q5" value="correct5">  It can run in the browser (client-side) or on servers (using Node.js).
+
+              </label>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    
+        </form>
+        <div id="result"></div>
+      </div>
+    </div>
+</div>
+
+  <script src="quiz3.js"></script>
+</body>
+</html>
